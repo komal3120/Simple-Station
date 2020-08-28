@@ -8,106 +8,142 @@ body{
 	height: 100vh;
 }
 
-.upper{
-	height: 190px;
-}
-
-.FirstLine{
-	background-color: rgb(84,62,89);
-	height: 20px;
-}
-
-.SecondLine{
-	background-color: rgb(189,122,146);
-	height: 120px;
+.header{
+	background-color: white;
+	height: 28.5%;
 	width: 100%;
-	border-top: 3px solid white;
-	border-bottom: 3px solid white;
-	border-left: 6px solid white;
-	border-right: 6px solid white;
+	position: fixed;
 }
 
-.log{
+.upper{
+	height: 20px;
+	position: fixed;
+	width: 100%;
+	background-color: rgb(84,62,89);
+}
+
+.mid{
+	height: 110px;
+	width: 100%;
+	/*margin-top: 2%;*/
+	left: 0px;
+  	margin-top: 20px;
+	z-index: 999;
+	position: fixed;
+	background-color: rgb(189,122,146);
+	border-left: 8px solid white;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	border-right: 8px solid white;
+}
+
+.mid .left{
+	float: left;
 	width: 45%;
 	height: 100%;
+	padding: 0px;
 }
 
-.log img{
-	float: left;
-	border-radius: 10px;
-	padding-top: 20px;
-	padding-bottom: 40px;
-	width: 12%;
-	margin-left: 35%;
-	height: 140px;
-}
-
-.log label{
+.mid .left .label{
 	float: right;
-	padding-top: 28px;
-	font-size: 50px;
-	font-weight: bold;
-	font-style: italic;
-	/*margin-right: 5%;*/
-}
-
-.account{
 	width: 50%;
 	height: 100%;
-	float: right;
-	margin-top: -7%;
+	text-align: center; 
+	padding-top: 20px;
+	/*padding: 0px 10px 10px 10px;*/
 }
 
-.account a{
-	float: none;
-    display: block;
-    text-align: left;
+.mid .left .label h1{
+	width: 100%;
+	font-size: 45px;
+	font-style: italic;
 }
 
-#myAcc{
+
+.mid .left .img{
 	float: left;
-	padding-top: 40px;
-	margin-left: 50%;
-	margin-top: -5%;
-	font-size: 25px;
+	width: 15%;
+	height: 100%;
+	margin-left: 30%;
+}
+
+.mid .left .img img{
+	height: 100%;
+	width: 100%;
+}
+
+.mid .right{
+	float: right;
+	width: 35%;
+	height: 100%;
+}
+
+.mid .right .myaccount{
+	float: left;
+	height: 100%;
+	padding-top: 20px;
+	width: 40%;
+}
+
+.mid .right .myaccount i{
+	width: 100%;
+	font-size: 30px;
+	padding-left: 60px;
+	float: left;
+}
+
+.mid .right .myaccount label{
+	margin-top: 5%;
 	font-weight: bold;
 	font-style: italic;
-	overflow: hidden;
-}
-
-#accountIcon{
-	float: left;
-	margin-left: 55%;
-	padding-top: 10px;
-	font-size: 40px;
-}
-
-#addcart{
-	float: right;
-	padding-top: 40px;
-	margin-right: 10%;
-	margin-top: -5%;
 	font-size: 25px;
+	padding-left: 20px;
+}
+
+.mid .right .addtocart{
+	float: right;
+	margin-right: 16%;
+	height: 100%;
+	padding-top: 20px;
+	width: 40%;
+}
+
+.mid .right .addtocart i{
+	width: 100%;
+	font-size: 30px;
+	padding-left: 60px;
+	float: left;
+}
+
+.mid .right .addtocart label{
+	margin-top: 5%;
 	font-weight: bold;
 	font-style: italic;
-	overflow: hidden;
+	font-size: 25px;
+	padding-left: 20px;
 }
 
-#AddIcon{
-	float: right;
-	font-size: 40px;
-	margin-top: -7%;
-	margin-right: 16%;	
-}
-
-.header{
+.low{
+	height: 80px;
+	width: 100%;
+	z-index: 999;
+	left: 0px;
+  	margin-top: 130px;
+	position: fixed;
 	background-color: rgb(48,25,52);
-	padding-top: 20px; 
-	word-spacing: 24px;
-	height: 70px;
 }
 
-.header a{
+.low .lefthead{
+	width: 50%;
+	height: 100%;
+	float: left;
+	margin-left: 120px;
+	padding-left: 100px;
+  	padding-top: 24px;
+  	word-spacing: 50px;
+}
+
+.low .lefthead a{
 	font-size: 18px;	
 	font-weight: bold;
 	line-height: 25px;
@@ -115,37 +151,35 @@ body{
 	color: white;
 	text-decoration: none;
 	text-align: center;
-
 }
 
-.header a:hover{
+.low a:hover{
 	background-color: rgb(84,62,89);
 	font-size: 25px;
 }
 
-.header-right{
+.low .righthead{
+	width: 30%;
+	height: 100%;
 	float: right;
-	padding-right: 45px;
-	padding-bottom: 10px;
-	margin-top: -0.5%;
-	width: 35%;
+	padding-top: 12px;
 }
 
-.header-right input[type=text]{
-	padding: 6px;
-	float: center;
+.low .righthead input[type=text]{
+	float: left;
   	margin-top: 8px;
-  	width: 90%;
+  	height: 36px;
+  	width: 80%;
   	font-size: 17px;
   	text-align: center;
-/*  	border: none;*/
+
 }
 
-.header-right button{
-	float: right;
-	margin-top: 1.5%;
+.low .righthead button{
+	float: left;
+	margin-top: 8px;
 	height: 36px;
-	margin-right: 26px;
+	
 	font-size: 25px;
 	background: gray;
 	border: none;
