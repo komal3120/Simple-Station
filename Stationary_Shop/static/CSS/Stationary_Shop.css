@@ -8,6 +8,8 @@ body{
 	height: 100vh;
 }
 
+/**************************header***********************/
+
 .header{
 	background-color: white;
 	height: 28.5%;
@@ -92,10 +94,12 @@ body{
 	float: left;
 }
 
-.mid .right .myaccount label{
+.mid .right .myaccount button{
 	margin-top: 5%;
 	font-weight: bold;
 	font-style: italic;
+	background: transparent;
+	border: none;
 	font-size: 25px;
 	padding-left: 20px;
 }
@@ -186,3 +190,6 @@ body{
 	border-radius: 0;
 	cursor: pointer;
 }
+
+
+ 

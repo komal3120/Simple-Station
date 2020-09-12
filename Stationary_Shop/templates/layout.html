@@ -5,8 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='CSS/Stationary_Shop.css') }}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
+	  <!-- **********************************Header******************************************** -->
 	<div class="header">
 		<div class="upper"></div>
 		<div class="mid">
@@ -17,7 +25,7 @@
 			<div class="right">
 				<div class="myaccount">
 					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
-					<label>My Account</label>
+					<button data-target="#myModal" data-toggle="modal">My Account</button>
 				</div>
 				<div class="addtocart">
 					<i class="fa fa-shopping-cart"></i>
@@ -41,6 +49,100 @@
 			</div>
 		</div>
 	</div>
+	
+<!-- *********************************end header************************* -->
 {% block body %} {% endblock %}
+<div class="container">
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header text-center">
+          <h4 class="modal-title ">Create an Account</h4>
+          	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          		<span aria-hidden="true">&times;</span>
+      		</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+          	<div class="form-group">
+          		<label><i class="fa fa-user fa-2x"></i><b> Username: </b></label>
+          		<input type="text" name="" class="form-control">
+          	</div>
+          	<div class="form-group">
+          		<label data-error="wrong" data-success="right" for="defaultForm-email">
+          			<i class="fa fa-envelope fa-2x"></i><b> Email: </b></label>
+          		<input type="email" name="" class="form-control">
+          	</div>
+          	<div class="form-group">
+          		<label data-error="wrong" data-success="right" for="defaultForm-pass">
+          			<i class="fa fa-lock fa-2x"></i> <b>Password: </b></label>
+          		<input type="password" id="defaultForm-pass" name="" class="form-control">
+          	</div>
+          </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Sign Up</button>
+        </div>
+        <div class="col-md-12">
+              <p class="font-small white-text d-flex justify-content-end">Have an account? <button class="btn btn-outline-danger waves-effect" data-target="#myModal1" data-toggle="modal" data-dismiss="modal">  Log in</button></p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="container1">
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header text-center">
+          <h4 class="modal-title ">Log In</h4>
+          	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          		<span aria-hidden="true">&times;</span>
+      		</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+          	<div class="form-group">
+          		<label data-error="wrong" data-success="right" for="defaultForm-email">
+          			<i class="fa fa-envelope fa-2x"></i><b> Email: </b></label>
+          		<input type="email" name="" class="form-control">
+          	</div>
+          	<div class="form-group">
+          		<label data-error="wrong" data-success="right" for="defaultForm-pass">
+          			<i class="fa fa-lock fa-2x"></i> <b>Password: </b></label>
+          		<input type="password" id="defaultForm-pass" name="" class="form-control">
+          	</div>
+          </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Log in</button>
+        </div>
+        <div class="col-md-12">
+              <p class="font-small white-text d-flex justify-content-end">Not registered? <button class="btn btn-outline-danger waves-effect" data-target="#myModal" data-toggle="modal" data-dismiss="modal">  Sign Up</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
 </body>
 </html>
