@@ -205,6 +205,7 @@ body{
 }
  .contact {
  	width: 100%;
+ 	/*float: right;*/
 	text-align: center;
 	color: white;
 	font-size: 20px;
@@ -213,6 +214,7 @@ body{
 }
 .contact p{
 	color: white;
+	/*float: right;*/
 	font-size: 45px;
 
 }
@@ -328,19 +330,22 @@ body{
 .about {
 	width: 100%;
 	color: white;
+	/*float: left;*/
 	text-align: center;
 	font-size: 50px;
 	margin-top: 3%;
 	/*float: left;*/
 }
 .about p b {
-	font-size: 50px;
+     /*float: left;*/
+     /*margin-top: -40px;*/
+	font-size: 45px;
 
 }
 .about p {
 	font-size: 25px;
 	text-align: center;
-	/*float: center;*/
+	/*float: right;*/
 	/*margin-left: 13px;*/
 }
 .about p i {
