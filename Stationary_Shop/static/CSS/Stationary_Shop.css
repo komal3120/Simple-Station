@@ -195,7 +195,7 @@ body{
 /*footer section*/
 .footer{
 	
-    height: 60%;
+    height: 46%;
    
     width: 100%;
     background-color: black;
@@ -332,7 +332,7 @@ body{
 	/*float: left;*/
 	text-align: center;
 	font-size: 50px;
-	margin-top: 3%;
+	margin-top: 1%;
 	/*float: left;*/
 }
 .about p b {
@@ -350,7 +350,7 @@ body{
 	/*text-align: center;*/
 	float: right;
 	margin-right: 13px;
-	padding-top: 40px;
+	padding-top: 10px;
 }
 
 
