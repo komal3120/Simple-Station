@@ -17,6 +17,11 @@ body{
 	position: fixed;
 	z-index: 999;
 }
+.cro img{
+	position: fixed;
+	/*font-size: 5px;*/
+	z-index: 1000;
+}
 
 .upper{
 	height: 20px;
